@@ -35,8 +35,10 @@ Al finalizar la actividad, los estudiantes deberán ser capaces de:
 
 **Nombre:**
 Omni Editor 2.0
+
 **Enlace:**
 https://huggingface.co/spaces/selfit-camera/Omni-Image-Editor
+
 ------------------------------------------------------------------------
 
 ## 2. ¿Qué hace el agente?
@@ -80,7 +82,7 @@ Complete la siguiente tabla y justifique brevemente cada respuesta.
   
   **Episódico:**      Sí / No,           Si el usuario realiza una única edición, la decisión depende de solo esa imagen y ese propmt, entonces sería episódico. Pero, si el usuario realizar varias ediciones consecutivas    sobre la                                    misma imagen, la interacción completa podría verse como secuencial. 
   
-  **Estático::**       Sí,                La imagenes no cambian por si solas y el entorno permanece igual hasta que el agente termine.
+  **Estático:**       Sí,                La imagenes no cambian por si solas y el entorno permanece igual hasta que el agente termine.
   
   **Discreto:**       No,                Las imágenes contienen millones de valores de píxeles, por lo que el espacio de estados es continuo o muy cercano a continuo.
   
