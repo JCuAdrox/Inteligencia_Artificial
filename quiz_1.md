@@ -54,18 +54,18 @@ o videos, remover marcas de agua y combinar dos o más imagenes.
   Se verifica el número de errores cometidos por imagen. Es decir, que 
   tanto cumple con todas las intrucciones que le asigna el usuario y 
   qué tan buena interpretacion tiene de estas.
+  
   **Environment**   ¿Con qué interactúa el agente?
   El agente interactua con diferentes tableros en el entorno, también
-  con las imagenes y las instrucciones del usuario
+  con las imagenes y las instrucciones del usuario.
+  
   **Actuators**     ¿Qué acciones produce?
   Procesa la imagen, luego verifica las instrucciones que posteriormente 
   se le aplican a la imagen y por ultimo retorna el resultado.
+  
   **Sensors**       ¿Qué información recibe como entrada?
   Dependiendo de la herramienta que se utilice, recibe diferentes 
-  intrucciones como: 
-  1. Las imagenes cargadas por el usuario.
-  2. Las dimensiones que debe tener la imagen de retorno.
-  Por último, recibe el prompt.
+  intrucciones como: Las imagenes cargadas por el usuario, y Las dimensiones que debe tener la imagen de retorno. Por último, recibe el prompt.
 ------------------------------------------------------------------------
 
 ## 4. Clasificación del entorno
@@ -75,10 +75,15 @@ Complete la siguiente tabla y justifique brevemente cada respuesta.
   Propiedad      Clasificación     Justificación
   -------------- ----------------- ---------------
   Observable     Total             El agente tiene acceso a la imagen completa, el prompt del usuario y todos los pixeles de la imagen. 
+  
   Determinista   No                El agente puede llegar a diferentes resultados partiendo del mismo prompt e imagen.
+  
   Episódico      Sí / No           Si el usuario realiza una única edición, la decisión depende de solo esa imagen y ese propmt,entonces sería episódico. Pero, si el usuario realizar varias ediciones consecutivas sobre la                                    misma imagen, la interacción completa podría verse como secuencial. 
+  
   Estático       Sí                La imagenes no cambian por si solas y el entorno permanece igual hasta que el agente termine.
+  
   Discreto       No                Las imágenes contienen millones de valores de píxeles (intensidades y colores), por lo que el espacio de estados es continuo o muy cercano a continuo.
+  
   Conocido       Sí                El sistema conoce cómo procesar una imagen mediante el modelo de IA con el que fue entrenado. Además, sabe que operaciones puede realizar.      
 
 ------------------------------------------------------------------------
@@ -87,7 +92,8 @@ Complete la siguiente tabla y justifique brevemente cada respuesta.
 
 Seleccione la opción que consideren más adecuada y explique por qué.
 -   Agente con aprendizaje
-Justificación
+  
+**Justificación:**
 
 El modelo esta entrenado con grandes conjuntos de datos de imágenes y texto. Gracias a ese entrenamiento, el agente aprende patrones, relaciones entre imágenes e instrucciones en lenguaje natural, y cómo realizar diferentes tipos de edición.
 
@@ -122,22 +128,32 @@ Encuentre un Space que pueda clasificarse como:
 
 **Nombre del space:**
 PaddleOCR-VL Online Demo
+
 **Enlace:**
 https://huggingface.co/spaces/PaddlePaddle/PaddleOCR-VL_Online_Demo
+
 **Justificación:**
+
 **Totalmente observable:** El agente recibe la imagen completa del documento antes de procesarla. No existe información relevante oculta para realizar el reconocimiento del texto.
+
 **Determinista:** Si se utiliza la misma imagen y la misma configuración del modelo, el resultado será el mismo en cada ejecución.
+
 **Episódico:** Cada documento se procesa de manera independiente. El reconocimiento realizado sobre una imagen no afecta el procesamiento de la siguiente.
 
 2.  **Parcialmente observable, estocástico y secuencial.**
 
 **Nombre del space:**
 Experience reality through an RFT observer agent’s perspective
+
 **Enlace:**
 https://huggingface.co/spaces/RFTSystems/Agents_Perspective
+
 **Justificación:**
+
 **Parcialmente observable:** Cada agente solo puede ver lo que está dentro de su campo de visión, los muros bloquean la visibilidad y no puede observar todo el entorno.
+
 **Estocástico:** Aunque el entorno puede configurarse de forma reproducible, en modos automáticos el comportamiento depende de las acciones de otro agente y de la evolución del entorno, por lo que el resultado no está completamente determinado desde la perspectiva de un agente.
+
 **Secuencial:** Cada decisión influye en los estados futuros. Moverse en una dirección cambia la situación del siguiente instante y afecta las decisiones posteriores.
 
 Justifique su respuesta.
