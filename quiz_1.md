@@ -60,11 +60,12 @@ El agente es capaz de modificar imagenes, generar texto a base de imagenes, remo
   
   **Actuators**     ¿Qué acciones produce?
   Procesa la imagen, luego verifica las instrucciones que posteriormente 
-  se le aplican a la imagen y por ultimo retorna el resultado.
+  se le aplican a la imagen y por último retorna el resultado.
   
   **Sensors**       ¿Qué información recibe como entrada?
   Dependiendo de la herramienta que se utilice, recibe diferentes 
   intrucciones como: Las imagenes cargadas por el usuario, y Las dimensiones que debe tener la imagen de retorno. Por último, recibe el prompt.
+  
 ------------------------------------------------------------------------
 
 ## 4. Clasificación del entorno
@@ -73,17 +74,17 @@ Complete la siguiente tabla y justifique brevemente cada respuesta.
 
   Propiedad      Clasificación     Justificación
   -------------- ----------------- ---------------
-  Observable     Total             El agente tiene acceso a la imagen completa, el prompt del usuario y todos los pixeles de la imagen. 
+  **Observable:**     Total,             El agente tiene acceso a la imagen completa, el prompt del usuario y todos los pixeles de la imagen. 
   
-  Determinista   No                El agente puede llegar a diferentes resultados partiendo del mismo prompt e imagen.
+  **Determinista:**   No,                El agente puede llegar a diferentes resultados partiendo del mismo prompt e imagen.
   
-  Episódico      Sí / No           Si el usuario realiza una única edición, la decisión depende de solo esa imagen y ese propmt,entonces sería episódico. Pero, si el usuario realizar varias ediciones consecutivas sobre la                                    misma imagen, la interacción completa podría verse como secuencial. 
+  **Episódico:**      Sí / No,           Si el usuario realiza una única edición, la decisión depende de solo esa imagen y ese propmt, entonces sería episódico. Pero, si el usuario realizar varias ediciones consecutivas    sobre la                                    misma imagen, la interacción completa podría verse como secuencial. 
   
-  Estático       Sí                La imagenes no cambian por si solas y el entorno permanece igual hasta que el agente termine.
+  **Estático::**       Sí,                La imagenes no cambian por si solas y el entorno permanece igual hasta que el agente termine.
   
-  Discreto       No                Las imágenes contienen millones de valores de píxeles (intensidades y colores), por lo que el espacio de estados es continuo o muy cercano a continuo.
+  **Discreto:**       No,                Las imágenes contienen millones de valores de píxeles, por lo que el espacio de estados es continuo o muy cercano a continuo.
   
-  Conocido       Sí                El sistema conoce cómo procesar una imagen mediante el modelo de IA con el que fue entrenado. Además, sabe que operaciones puede realizar.      
+  **Conocido:**       Sí,                El sistema conoce cómo procesar una imagen mediante el modelo de IA con el que fue entrenado. Además, sabe que operaciones puede realizar.      
 
 ------------------------------------------------------------------------
 
