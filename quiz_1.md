@@ -40,8 +40,7 @@ https://huggingface.co/spaces/selfit-camera/Omni-Image-Editor
 ------------------------------------------------------------------------
 
 ## 2. ¿Qué hace el agente?
-El agente es capaz de modificar imagenes, generar texto a base de imagenes
-o videos, remover marcas de agua y combinar dos o más imagenes.
+El agente es capaz de modificar imagenes, generar texto a base de imagenes, remover marcas de agua y combinar dos o más imagenes.
 
 
 ------------------------------------------------------------------------
