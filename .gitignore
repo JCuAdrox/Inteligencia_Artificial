@@ -1,0 +1,7 @@
+# Datos descargados del taller de transfer learning
+notebooks/lecture8/transfer_learning/data_raw/
+notebooks/lecture8/transfer_learning/dataset/
+
+# Archivos de variables de entorno (API keys)
+*.env
+.env
