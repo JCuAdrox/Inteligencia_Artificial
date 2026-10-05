@@ -1,0 +1,4 @@
+model,cv_accuracy,cv_std,train_accuracy,best_params
+logistic_regression,0.9790640394088669,0.027713464392187602,1.0,"{""classifier__C"": 1}"
+knn,0.9578817733990148,0.040520048714638005,0.964772550846142,"{""classifier__n_neighbors"": 7, ""classifier__weights"": ""uniform""}"
+decision_tree,0.9022167487684729,0.05861654992213133,0.9982456140350877,"{""classifier__criterion"": ""gini"", ""classifier__max_depth"": 4, ""classifier__min_samples_split"": 2}"
