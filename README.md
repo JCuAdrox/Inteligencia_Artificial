@@ -1,11 +1,9 @@
 # Workshop RAG · SI3003 Inteligencia Artificial
 
-- **Autores (trabajo en grupo):** Jerónimo Castaño Herrera y Jerónimo Zapata Cuadros
-- **Usuarios de GitHub:** JeronimoCH · JCuAdrox
+- **Nombre:** Jerónimo Castaño Herrera
+- **Usuario de GitHub:** JeronimoCH
 - **Fecha:** 21 de octubre de 2026
 - **Entrega a:** jipadillab@eafit.edu.co
-
-> **Nota:** este taller se hizo en grupo entre los dos autores. Es una sola entrega y ambos envían este mismo enlace. También está publicada en https://github.com/JCuAdrox/Inteligencia_Artificial.
 
 ## Progreso
 
