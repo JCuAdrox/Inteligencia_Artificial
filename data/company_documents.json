@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ventas_001",
+    "title": "Catálogo y precios de café 2026",
+    "content": "Tostadora Altamira vende tres líneas de café de origen antioqueño. La línea Clásica (variedad Castillo, tueste medio) cuesta $38.000 la libra. La línea Reserva (variedad Caturra de Jardín, proceso lavado, tueste medio-claro) cuesta $52.000 la libra. La línea Microlote (Geisha de Urrao, proceso honey) cuesta $95.000 por bolsa de 250 g y solo se produce en cosecha principal, entre octubre y diciembre.\n\nTodas las presentaciones se ofrecen en grano o molido. El molido se hace bajo pedido en cinco niveles: turco, espresso, filtro, prensa francesa y cold brew. Los precios incluyen IVA.",
+    "metadata": {"department": "ventas", "type": "pricing"}
+  },
+  {
+    "id": "ventas_002",
+    "title": "Suscripción mensual Altamira Club",
+    "content": "Altamira Club es la suscripción mensual de café. El plan Básico entrega dos libras de línea Clásica al mes por $70.000. El plan Explorador entrega una libra de Reserva y una bolsa de 250 g de un café invitado por $98.000. El envío es gratis en ambos planes dentro del Valle de Aburrá.\n\nLa suscripción se cobra el día 1 de cada mes y los despachos salen entre el día 3 y el día 5. Se puede pausar hasta dos meses por año sin costo. Para cancelar hay que avisar antes del día 25; si se avisa después, el cobro del mes siguiente ya no se reembolsa.",
+    "metadata": {"department": "ventas", "type": "policy"}
+  },
+  {
+    "id": "ventas_003",
+    "title": "Ventas a cafeterías y clientes mayoristas",
+    "content": "Los clientes mayoristas son cafeterías, restaurantes y hoteles que compran 10 kg o más al mes. Reciben 18 % de descuento sobre el precio de lista y crédito a 30 días después de seis meses de compras puntuales. Los pedidos mayoristas se hacen por el portal B2B antes de las 2:00 p. m. del miércoles para despacharse el viernes de la misma semana.\n\nTodo cliente mayorista nuevo recibe una capacitación de barismo de 4 horas sin costo en la sede de Envigado. El ejecutivo de cuenta puede aprobar muestras gratis de hasta 1 kg; muestras mayores requieren aprobación de la gerente comercial.",
+    "metadata": {"department": "ventas", "type": "procedure"}
+  },
+  {
+    "id": "logistica_001",
+    "title": "Envíos y tiempos de entrega",
+    "content": "Los pedidos de la tienda en línea se despachan de lunes a viernes. Dentro del Valle de Aburrá la entrega tarda 1 día hábil y cuesta $9.000; es gratis en compras mayores a $120.000. Para el resto de Colombia la entrega tarda de 2 a 4 días hábiles con transportadora nacional y cuesta $16.000.\n\nNo se hacen envíos internacionales desde la tienda en línea. Los pedidos realizados después de las 12:00 m. salen al día hábil siguiente. Cada envío incluye número de guía, que se manda por correo y WhatsApp.",
+    "metadata": {"department": "logistica", "type": "policy"}
+  },
+  {
+    "id": "servicio_001",
+    "title": "Política de devoluciones y garantía de frescura",
+    "content": "Garantizamos que el café llega con menos de 21 días desde la fecha de tueste impresa en la bolsa. Si llega con más de 21 días, o la válvula de la bolsa está dañada, reponemos el producto sin costo.\n\nLas bolsas cerradas pueden devolverse dentro de los 10 días calendario siguientes a la entrega; el reembolso se hace al mismo medio de pago en un plazo de 5 días hábiles. El café molido bajo pedido y las bolsas abiertas no se pueden devolver, salvo por defecto de calidad. Los reclamos se reportan en servicio@altamira.example con foto del lote.",
+    "metadata": {"department": "servicio", "type": "policy"}
+  },
+  {
+    "id": "produccion_001",
+    "title": "Proceso de tueste y control de calidad",
+    "content": "Tostamos en una máquina Probat de 12 kg los martes y jueves. Cada lote se registra con su perfil de tueste, temperatura de carga y tiempo de desarrollo. El tiempo de desarrollo objetivo es entre 18 % y 22 % del tiempo total.\n\nDe cada lote se catan tres tazas siguiendo el protocolo SCA. Un lote con puntaje menor a 82 puntos no se vende como Reserva y pasa a la línea Clásica. Un lote con defectos (sabor a fenol, quemado o fermento) se descarta. La responsable de calidad firma la liberación de cada lote antes de empacarlo.",
+    "metadata": {"department": "produccion", "type": "procedure"}
+  },
+  {
+    "id": "produccion_002",
+    "title": "Compra de café verde a caficultores",
+    "content": "Compramos café pergamino seco directamente a 14 familias caficultoras de Jardín, Urrao y Andes. Pagamos como mínimo 25 % por encima del precio de referencia de la Federación Nacional de Cafeteros cuando el lote supera 84 puntos en taza.\n\nLos pagos se hacen en un máximo de 8 días después de recibir el lote en bodega. Cada año visitamos todas las fincas al menos una vez para verificar trazabilidad, secado y almacenamiento. No compramos café de fincas que hayan talado bosque nativo después de 2020.",
+    "metadata": {"department": "produccion", "type": "policy"}
+  },
+  {
+    "id": "rrhh_001",
+    "title": "Horarios, turnos y trabajo remoto",
+    "content": "El equipo de tostión y empaque trabaja de lunes a viernes de 7:00 a. m. a 4:00 p. m., con una hora de almuerzo. El equipo administrativo (ventas, mercadeo y finanzas) puede trabajar en remoto los lunes y viernes; martes a jueves es presencial en la sede de Envigado.\n\nLas horas extra deben ser aprobadas por la jefa de planta antes de realizarse y se pagan con el recargo de ley. Cada colaborador recibe una libra de café al mes como beneficio.",
+    "metadata": {"department": "recursos_humanos", "type": "policy"}
+  },
+  {
+    "id": "rrhh_002",
+    "title": "Onboarding de nuevos colaboradores",
+    "content": "La primera semana de un colaborador nuevo incluye: inducción en seguridad industrial y uso de elementos de protección el día 1; curso de manipulación de alimentos (obligatorio, con certificado) los días 2 y 3; y una cata guiada con la responsable de calidad el día 4. El día 5 el colaborador acompaña a su líder en su área.\n\nDurante el primer mes tiene un compañero mentor asignado. Al final del periodo de prueba de 2 meses se hace una evaluación de desempeño con su líder.",
+    "metadata": {"department": "recursos_humanos", "type": "procedure"}
+  },
+  {
+    "id": "finanzas_001",
+    "title": "Reembolso de gastos y viáticos",
+    "content": "Los gastos de viaje a fincas se reembolsan con factura electrónica a nombre de Tostadora Altamira S.A.S. El viático diario de alimentación es de $60.000 y el hospedaje máximo es de $180.000 por noche.\n\nGastos hasta $300.000 los aprueba el líder del área. Gastos mayores a $300.000 requieren aprobación de la gerencia financiera. Las solicitudes se radican en los 5 días hábiles siguientes al viaje y se pagan en la quincena siguiente.",
+    "metadata": {"department": "finanzas", "type": "policy"}
+  }
+]
