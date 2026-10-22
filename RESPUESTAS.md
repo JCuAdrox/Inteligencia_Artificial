@@ -96,52 +96,56 @@ Además del cómputo está la memoria: cada consulta recorre 10⁶ × 768 × 4 B
 
 # Bloque A · App RAG empresarial
 
+> Modelos usados en toda la entrega: generación `nvidia/nemotron-3.5-lightning-30b-a3b` (con el razonamiento desactivado: `enable_thinking=False`, porque si no gasta todos los tokens pensando y devuelve respuestas vacías) y embeddings `nvidia/llama-nemotron-embed-vl-1b-v2` (dimensión 2048). El endpoint de embeddings respondía 502 en ~40 % de las llamadas, así que los notebooks envuelven los embeddings en `RetryEmbeddings` (timeout corto, reintentos y caché de consultas).
+
 ## A1 · Ejecuta la app RAG de punta a punta
 
-_Evidencia:_ `evidencias/A1_gradio.png` · `notebooks/02b_rag_app_nvidia_nim_colab.ipynb`
+_Evidencia:_ [`evidencias/A1_gradio.png`](evidencias/A1_gradio.png) · [`notebooks/02b_rag_app_original_A1.ipynb`](notebooks/02b_rag_app_original_A1.ipynb) (copia del original con los documentos de demostración, ejecutada)
 
-⏳ PENDIENTE: ejecutar el notebook **original** (documentos de demostración) y llenar la tabla.
+Índice: 4 documentos → **4 chunks** (cada documento de demostración mide menos de 400 caracteres, así que no se parte).
 
-| # | Pregunta | Respuesta del RAG | Fuentes | ¿Correcta? |
+| # | Pregunta | Respuesta del RAG | Fuentes recuperadas | ¿Correcta? |
 |---:|---|---|---|:---:|
-| 1 | ¿Cuál es el precio del plan Enterprise de CloudSync Pro? | | | |
-| 2 | ¿Cuántos días pueden trabajar remotamente los empleados? | | | |
-| 3 | ¿Qué pasa con los reembolsos mayores a $100? | | | |
-| 4 | ¿Qué ocurre durante la primera semana de onboarding? | | | |
-| 5 | (fuera de contexto) ¿Cuántos días de vacaciones tiene un empleado? | | | |
+| 1 | ¿Cuál es el precio del plan Enterprise de CloudSync Pro? | $49/mes por usuario con compromiso anual. | CloudSync Pro — Precios, Política de reembolsos, Política de trabajo remoto | Sí |
+| 2 | ¿Cuántos días pueden trabajar remotamente los empleados? | Hasta 3 días por semana. | Política de trabajo remoto, Onboarding, Política de reembolsos | Parcial (omite «con aprobación del jefe directo») |
+| 3 | ¿Qué pasa con los reembolsos mayores a $100? | Requieren aprobación del supervisor y se procesan en 3 a 5 días hábiles al método de pago original. | Política de reembolsos, CloudSync Pro — Precios, Política de trabajo remoto | Sí |
+| 4 | ¿Qué ocurre durante la primera semana de onboarding? | Se completan módulos obligatorios de seguridad, cumplimiento y cultura de la empresa. | Onboarding, Política de trabajo remoto, Política de reembolsos | Sí |
+| 5 | ¿Cuántos días de vacaciones tiene un empleado al año? *(fuera de contexto)* | No tengo esa información en el contexto proporcionado. | Política de trabajo remoto, Onboarding, CloudSync Pro — Precios | Sí (no inventó) |
 
-_Análisis:_ número de chunks del índice (N = …) y qué hizo el modelo con la pregunta 5.
+**Qué observé.** Las 4 preguntas de ejemplo salen bien y la fuente correcta siempre es la primera. Pero **siempre se recuperan 3 fuentes**, incluso en la pregunta de vacaciones: con solo 4 documentos y umbral 0,3, casi todo pasa el filtro. Es decir, el umbral no filtró nada; lo que evitó la alucinación en la pregunta 5 fue el prompt («si el contexto no contiene la respuesta, indica que no tienes esa información»). La respuesta 2 es correcta pero incompleta: el modelo resume demasiado y pierde la condición de aprobación.
 
 ## A2 · Tu propio corpus de documentos
 
-_Evidencia:_ `data/company_documents.json` · `evidencias/A2_corpus.png` · celda «4b» del notebook 02b
+_Evidencia:_ [`data/company_documents.json`](data/company_documents.json) · [`evidencias/A2_corpus.png`](evidencias/A2_corpus.png) · celda «4b» de [`notebooks/02b_rag_app_nvidia_nim_colab.ipynb`](notebooks/02b_rag_app_nvidia_nim_colab.ipynb)
 
-**Corpus:** *Tostadora Altamira*, una tostadora de café de especialidad inventada en Envigado. 10 documentos con metadata `department` (ventas, logistica, servicio, produccion, recursos_humanos, finanzas) y `type` (pricing, policy, procedure). Tienen datos concretos y algunos parecidos a propósito (dos documentos hablan de aprobaciones por monto, dos de tiempos de entrega/despacho, dos de reembolsos) para que la recuperación no sea trivial.
+**Corpus:** *Tostadora Altamira*, una tostadora de café de especialidad (inventada) en Envigado. 10 documentos con metadata `department` (ventas, logistica, servicio, produccion, recursos_humanos, finanzas) y `type` (pricing, policy, procedure). Algunos se parecen a propósito (dos hablan de aprobaciones por monto, dos de reembolsos, dos de tiempos de entrega) para que la recuperación no sea trivial.
 
-**Chunking.** Los documentos miden entre 444 y 586 caracteres (promedio 514) y cada uno trata un solo tema en dos párrafos.
+**Chunking.** Los documentos miden entre 434 y 586 caracteres (promedio 514) y cada uno trata un solo tema en dos párrafos.
 
 | chunk_size / overlap | chunks | Efecto |
 |---|---:|---|
-| 400 / 40 (original) | 21 | Casi todos los documentos se parten en 2; el segundo párrafo queda sin el tema del primero. |
+| 400 / 40 (original) | 21 | Casi todos se parten en dos; el segundo párrafo queda sin el tema del primero. |
 | **600 / 60 (elegido)** | **10** | Un chunk por documento, coherente; con k=3 el contexto sigue siendo ≈1 500 caracteres. |
 
-Elegí 600 porque con documentos cortos y temáticos partirlos solo diluye el embedding (un fragmento como «Se puede pausar hasta dos meses por año sin costo» pierde la palabra *suscripción*). Si el corpus tuviera manuales largos volvería a un tamaño menor.
+Elegí 600 porque con documentos cortos y de un solo tema, partirlos solo diluye el embedding: un fragmento como «Se puede pausar hasta dos meses por año sin costo» pierde la palabra *suscripción*. Si el corpus tuviera manuales largos volvería a un tamaño menor.
 
-⏳ PENDIENTE: pegar la salida de la primera celda de «4b».
+Resultados (prompt A3 activo, k=3, umbral 0,3; scores sin umbral):
 
 | # | Pregunta | Respuesta del RAG | Fuentes (score) | Esperada | ¿Correcta? |
 |---:|---|---|---|---|:---:|
-| 1 | ¿Cuánto cuesta la libra de café Reserva? | | | $52.000 la libra | |
-| 2 | ¿Hasta qué día puedo cancelar la suscripción sin que me cobren el mes siguiente? | | | Antes del día 25 | |
-| 3 | ¿Qué descuento reciben los clientes mayoristas y cuándo pueden tener crédito? | | | 18 %; crédito a 30 días tras 6 meses | |
-| 4 | ¿Qué pasa con un lote que obtiene menos de 82 puntos en la catación? | | | Pasa a la línea Clásica | |
-| 5 | ¿Quién debe aprobar un gasto de viaje de $450.000? | | | Gerencia financiera | |
-| 6 | ¿Venden máquinas de espresso para el hogar? | | | No está en los documentos | |
-| 7 | ¿Cuál es el salario de un operario de tostión? | | | No está en los documentos | |
+| 1 | ¿Cuánto cuesta la libra de café Reserva? | $52.000 la libra [Catálogo y precios de café 2026]. | Catálogo y precios (0.401), Suscripción (0.356), Tueste y calidad (0.259) | $52.000 la libra | Sí |
+| 2 | ¿Hasta qué día puedo cancelar la suscripción sin que me cobren el mes siguiente? | No encontraré esa información en los documentos de Altamira. | Suscripción Altamira Club (0.405), Mayoristas (0.225), Devoluciones (0.197) | Antes del día 25 | **No** (falso «no sé») |
+| 3 | ¿Qué descuento reciben los clientes mayoristas y cuándo pueden tener crédito? | 18 % de descuento sobre el precio de lista y crédito a 30 días después de seis meses de compras puntuales. | Mayoristas (0.543), Café verde (0.150), Suscripción (0.140) | 18 %; crédito a 30 días tras 6 meses | Sí (sin cita) |
+| 4 | ¿Qué pasa con un lote que obtiene menos de 82 puntos en la catación? | No se vende como Reserva y pasa a la línea Clásica. [Proceso de tueste y control de calidad] | Tueste y calidad (0.304), Café verde (0.228), Mayoristas (0.163) | Pasa a la línea Clásica | Sí |
+| 5 | ¿Quién debe aprobar un gasto de viaje de $450.000? | La gerencia financiera, ya que supera el límite de $300.000 para el líder del área. [Reembolso de gastos y viáticos] | Viáticos (0.336), Suscripción (0.099), Envíos (0.098) | Gerencia financiera | Sí |
+| 6 | ¿Venden máquinas de espresso para el hogar? | No encuentro esa información en los documentos de Altamira. | Catálogo (0.246), Mayoristas (0.205), Horarios (0.197) | No está | Sí |
+| 7 | ¿Cuál es el salario de un operario de tostión? | No encuentro esa información en los documentos de Altamira. | Horarios (0.318), Tueste y calidad (0.245), Viáticos (0.223) | No está | Sí |
+
+**Resultado: 6 de 7 correctas.** La captura `A2_corpus.png` muestra justo el caso fallido, con el documento correcto recuperado (0.405 ✅). El fallo es interesante: el documento correcto se recuperó primero (0.405) y era el único sobre el umbral, y aun así el modelo dijo que no tenía la información. El texto dice «Para cancelar hay que avisar antes del día 25», y la pregunta habla de «hasta qué día… sin que me cobren»: el modelo necesitaba una pequeña inferencia y el prompt estricto lo empujó a rendirse. Las preguntas 6 y 7 se rechazaron bien. En la 7 el umbral no habría bastado: «Horarios, turnos y trabajo remoto» pasó con 0.318.
 
 ## A3 · Ingeniería del prompt (antes y después)
 
-_Evidencia:_ celda «A3 · Prompt antes y después» del notebook 02b
+_Evidencia:_ celda «A3 · Prompt antes y después» del notebook 02b (mismo índice, solo cambia el prompt)
 
 **Diff del prompt:**
 
@@ -159,35 +163,38 @@ _Evidencia:_ celda «A3 · Prompt antes y después» del notebook 02b
 + 4. Máximo 3 oraciones, en español.
 ```
 
-La regla 3 la agregué porque «¿Cuánto cuesta el envío?» tiene dos respuestas según el destino.
-
-⏳ PENDIENTE: pegar la tabla que imprime la celda.
-
-| Tipo | Pregunta | Antes | Después |
+| Tipo | Pregunta | Antes (prompt original) | Después (prompt A3) |
 |---|---|---|---|
-| fácil | ¿Cuánto cuesta la libra de café Reserva? | | |
-| ambigua | ¿Cuánto cuesta el envío? | | |
-| fuera de contexto | ¿Venden máquinas de espresso para el hogar? | | |
+| fácil | ¿Cuánto cuesta la libra de café Reserva? | $52.000 | $52.000 [Catálogo y precios de café 2026] |
+| ambigua | ¿Cuánto cuesta el envío? | Varía según ubicación y monto: Valle de Aburrá $9.000 (gratis > $120.000); resto de Colombia $16.000, 2 a 4 días hábiles. No hay envíos internacionales. *(lista con viñetas y negritas)* | Varía según ubicación y monto. Valle de Aburrá $9.000, gratis en compras > $120.000. Resto de Colombia, $16.000. *(3 oraciones, sin cita)* |
+| fuera de contexto | ¿Venden máquinas de espresso para el hogar? | «No, soy un modelo de lenguaje y no tengo información sobre la venta de máquinas de espresso para el hogar en el contexto proporcionado.» | «No encuentro esa información en los documentos de Altamira.» |
 
-_Conclusión:_ ⏳ ¿qué regla tuvo más efecto (cita, frase fija, longitud) y cuál ignoró el modelo?
+**Conclusión.**
+- **Más efecto: la frase fija (regla 2).** Antes, la respuesta fuera de contexto era confusa: empieza con «No», como si la tienda no vendiera máquinas (algo que el corpus no dice), y mezcla un descargo de «soy un modelo de lenguaje». Después es exacta y fácil de detectar automáticamente.
+- **La longitud (regla 4) también funcionó:** la respuesta ambigua pasó de una lista con viñetas a 3 oraciones con la misma información.
+- **Ignorada a medias: la cita (regla 1).** Se cumplió en la pregunta fácil, pero no en la ambigua ni en la pregunta 3 de A2.
+- **Efecto secundario:** la regla 2 volvió al modelo demasiado conservador. En A2-2 respondió «no sé» teniendo el documento correcto y, además, con una variante de la frase («No encontraré…»), así que tampoco la copió literal. Para corregirlo agregaría: «si el contexto contiene un dato relacionado, úsalo y explica la deducción».
 
 ## A4 · Muestra el score de similitud en las fuentes
 
-_Evidencia:_ `evidencias/A4_scores.png` · función `chat()` y celda «A4» del notebook 02b
+_Evidencia:_ [`evidencias/A4_scores.png`](evidencias/A4_scores.png) · función `chat()` y celda «A4» del notebook 02b
 
-Cambios: `build_pipeline` devuelve `(pipeline, chunks, vectorstore)` y `chat()` llama a `vectorstore.similarity_search_with_score(question, k=K)`; cada fuente se muestra con su score y con ✅ / ⛔ según supere `SCORE_THRESHOLD`.
-
-⏳ PENDIENTE: pegar la tabla de la celda A4.
+Cambios: `build_pipeline` devuelve `(pipeline, chunks, vectorstore)`, y `chat()` llama a `vectorstore.similarity_search_with_score(question, k=K)`. Cada fuente se muestra con su score y con ✅ / ⛔ según supere `SCORE_THRESHOLD`.
 
 | Pregunta | Tipo | top-1 | top-2 | top-3 |
 |---|---|---|---|---|
-| ¿Cuánto cuesta la libra de café Reserva? | buena | | | |
-| ¿Qué incluye la primera semana de un colaborador nuevo? | buena | | | |
-| ¿Cuántos días tarda un envío a Bogotá? | buena | | | |
-| ¿Venden máquinas de espresso para el hogar? | fuera | | | |
-| ¿Quién ganó el mundial de fútbol de 2022? | fuera | | | |
+| ¿Cuánto cuesta la libra de café Reserva? | buena | **0.401** · Catálogo y precios | 0.356 · Suscripción | 0.259 · Tueste y calidad |
+| ¿Qué incluye la primera semana de un colaborador nuevo? | buena | **0.529** · Onboarding | 0.260 · Horarios | 0.132 · Suscripción |
+| ¿Cuántos días tarda un envío a Bogotá? | buena | **0.490** · Envíos | 0.364 · Devoluciones | 0.349 · Mayoristas |
+| ¿Venden máquinas de espresso para el hogar? | fuera | 0.248 · Catálogo | 0.203 · Mayoristas | 0.199 · Suscripción |
+| ¿Quién ganó el mundial de fútbol de 2022? | fuera | 0.029 · Café verde | 0.024 · Tueste | 0.023 · Envíos |
 
-_Umbral propuesto:_ ⏳ elegir un valor entre el **menor top-1 de las preguntas buenas** y el **mayor top-1 de las preguntas fuera de contexto**. Si los rangos se solapan, ningún umbral separa perfectamente y conviene dejarlo bajo y confiar en el prompt (frase fija).
+**Umbral propuesto: mantener 0,30.**
+- En esta tabla, un umbral de 0,35 separaría perfecto: las buenas tienen un top-1 ≥ 0,40 y las de fuera ≤ 0,25.
+- Pero con los datos de A2 los rangos se solapan. La pregunta 4 (lote < 82 puntos), que es buena, tiene un top-1 de **0,304**, y la 7 (salario), que está fuera de contexto, tiene **0,318**. Un umbral de 0,35 habría dejado sin contexto a la pregunta 4 y no habría bloqueado a la 7.
+- Los scores de este modelo son bajos en general (las buenas rondan 0,30–0,55), así que 0,30 deja pasar el documento correcto en todas las preguntas buenas que probé y descarta los de relleno (0,10–0,25).
+- La decisión final la tiene que tomar el prompt: el umbral sirve para quitar ruido, no para detectar preguntas fuera de contexto.
+- Un dato curioso: una pregunta totalmente ajena (fútbol) da scores ≈ 0,03, mientras que una «cercana pero sin respuesta» (máquinas de espresso) da ≈ 0,25. Lo difícil son las preguntas cercanas al dominio.
 
 ---
 
