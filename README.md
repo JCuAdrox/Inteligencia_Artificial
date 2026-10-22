@@ -37,6 +37,8 @@
 
 **Retos elegidos:** C1, C3, C4, C5, C6 (tope 30 puntos).
 
+Resumen en lenguaje sencillo de cada resultado: [`EXPLICACION_RESULTADOS.md`](EXPLICACION_RESULTADOS.md).
+
 ## Cómo ejecutar mis notebooks
 
 Los notebooks están guardados **con sus salidas**. Para reproducirlos:
