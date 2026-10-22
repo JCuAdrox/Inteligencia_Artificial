@@ -1,0 +1,11 @@
+id,pregunta,fuente_esperada,palabra_clave,respuesta_esperada
+1,How many attention heads does the base Transformer use?,attention_paper.pdf,h = 8,h = 8 heads con dk = dv = 64
+2,What are the two RAG model variants?,rag_paper.pdf,RAG-Token,RAG-Sequence y RAG-Token
+3,What BLEU score did the big Transformer achieve on WMT 2014 English-to-German?,attention_paper.pdf,28.4,28.4 BLEU
+4,How many warmup steps were used in the Transformer learning rate schedule?,attention_paper.pdf,warmup_steps = 4000,warmup_steps = 4000 con Adam (β1=0.9; β2=0.98; ε=1e-9)
+5,What regularization techniques were used to train the Transformer?,attention_paper.pdf,label smoothing,Residual dropout (Pdrop = 0.1) y label smoothing (εls = 0.1)
+6,How long did it take to train the big Transformer model?,attention_paper.pdf,3.5 days,300.000 pasos en 3.5 días con 8 GPUs P100
+7,How many documents does the Wikipedia index used by RAG contain?,rag_paper.pdf,21M documents,Dump de diciembre de 2018 dividido en fragmentos de 100 palabras: 21M documentos
+8,Which approximation does RAG use in FAISS for fast retrieval?,rag_paper.pdf,Hierarchical Navigable Small World,Índice MIPS en FAISS con aproximación HNSW
+9,What is Thorough Decoding in RAG-Sequence?,rag_paper.pdf,Thorough Decoding,Beam search por documento y luego pasadas extra para estimar la probabilidad de cada hipótesis en todos los documentos
+10,Which fact verification dataset is RAG evaluated on?,rag_paper.pdf,FEVER,FEVER (clasificación de afirmaciones como soportadas/refutadas/sin información)

@@ -1,0 +1,13 @@
+# Claves y entornos
+.env
+*.env
+.venv/
+venv/
+
+# Datos temporales de los notebooks
+papers/*.pdf
+qdrant_data/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
