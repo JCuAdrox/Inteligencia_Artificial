@@ -1,7 +1,6 @@
 # Workshop RAG · SI3003 Inteligencia Artificial
 
-- **Nombre:** …
-- **Código estudiantil:** …
+- **Nombre:** Jerónimo Castaño Herrera
 - **Usuario de GitHub:** JeronimoCH
 - **Fecha:** 21 de octubre de 2026
 - **Entrega a:** jipadillab@eafit.edu.co
