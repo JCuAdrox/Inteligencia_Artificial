@@ -1,0 +1,11 @@
+id,pregunta,fuente_esperada,palabra_clave,respuesta_esperada
+1,What BLEU score did the big Transformer achieve on WMT 2014 English-to-German?,attention_paper.pdf,28.4,28.4 BLEU (Abstract y Sección 6.1)
+2,How many warmup steps does the Transformer learning rate schedule use?,attention_paper.pdf,4000,warmup_steps = 4000 (Sección 5.3)
+3,On what GPUs were the Transformer models trained?,attention_paper.pdf,P100,Una máquina con 8 GPUs NVIDIA P100 (Sección 5.2)
+4,What kind of positional encoding does the Transformer use?,attention_paper.pdf,sinusoid,Funciones seno y coseno de distintas frecuencias (Sección 3.5)
+5,How large is the shared source-target vocabulary for English-German?,attention_paper.pdf,37000,Byte-pair encoding con unos 37000 tokens (Sección 5.1)
+6,Which pre-trained model is used as the generator in RAG?,rag_paper.pdf,BART-large,BART-large: seq2seq transformer de 400M parámetros (Sección 2.3)
+7,How many documents are in the Wikipedia index used by RAG?,rag_paper.pdf,21M,21M documentos de 100 palabras del volcado de diciembre 2018 (Sección 3)
+8,How can RAG update its world knowledge without retraining?,rag_paper.pdf,hot-swap,Reemplazando el índice no paramétrico (index hot-swapping; Sección 4.5)
+9,Which retriever does RAG use to fetch documents?,rag_paper.pdf,DPR,Dense Passage Retriever (DPR) con bi-encoder BERT (Sección 2.2)
+10,Which decoding procedure runs beam search for each retrieved document in RAG-Sequence?,rag_paper.pdf,Thorough,Thorough Decoding (Sección 2.5)

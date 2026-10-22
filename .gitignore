@@ -5,3 +5,15 @@ notebooks/lecture8/transfer_learning/dataset/
 # Archivos de variables de entorno (API keys)
 *.env
 .env
+
+# Workshop RAG (plantilla de entrega)
+.venv/
+venv/
+papers/*.pdf
+notebooks/papers/*.pdf
+qdrant_data/
+notebooks/qdrant_data/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store

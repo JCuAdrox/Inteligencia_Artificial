@@ -1,0 +1,18 @@
+# Workshop RAG (notebooks/02b, 03, 04) — probado con Python 3.12
+gradio
+langchain
+langchain-core
+langchain-text-splitters
+langchain-nvidia-ai-endpoints
+langchain-qdrant
+qdrant-client
+markitdown[pdf]
+requests
+numpy
+matplotlib
+faiss-cpu
+# ejecución y capturas
+nbclient
+nbformat
+ipykernel
+playwright
