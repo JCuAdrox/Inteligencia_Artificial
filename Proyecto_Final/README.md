@@ -47,8 +47,7 @@ Proyecto_Final/
 │   └── evaluacion_agente.csv     resultados de la evaluacion del agente
 ├── informe.md                    informe (max 4 paginas)
 ├── declaracion_uso_IA.md         declaracion de uso de IA generativa
-├── requirements.txt
-└── EAFIT_Proyecto_Final_IA.docx  enunciado del proyecto
+└── requirements.txt
 ```
 
 ## Cómo correrlo
