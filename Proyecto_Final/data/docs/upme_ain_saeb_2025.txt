@@ -1,0 +1,659 @@
+FUENTE: https://docs.upme.gov.co/Normatividad/AIN_Final_Circular_030_2025.pdf
+
+ 
+ 
+
+ 
+ 3 
+UPME.GOV.CO | 
+Tabla de contenido 
+ 
+ALCANCE DEL PRESENTE DOCUMENTO .............................................................. 4 
+ANTECEDENTES Y CONTEXTO ............................................................................. 4 
+DESCRIPCIÓN DEL PROBLEMA ........................................................................... 6 
+PRINCIPALES MODIFICACIONES ......................................................................... 9 
+IDENTIFICACIÓN DE LOS POTENCIALES AFECTADOS ........................................ 11 
+OBJETIVO DE LA ACTUALIZACIÓN REGULATORIA .............................................. 12 
+JUSTIFICACIÓN DE LA NECESIDAD .................................................................... 12 
+PRESENTACIÓN DE ALTERNATIVAS ................................................................... 13 
+Alternativa 1. Mantener la regulación actual. ............................................................ 13 
+Alternativa 2. Modificar la regulación actual. ............................................................ 14 
+Alternativa 2.1. Modificar FPO, garantía y Curva S ..................................................... 14 
+Alternativa 2.2. Sin modificación de FPO y de garantía, pero con modificación de 
+curva S .................................................................................................................... 14 
+Alternativa 2.3. Modificar FPO, garantía en tiempo, Curva S y emitir concepto por fases
+ ................................................................................................................................ 15 
+ANÁLISIS DE ALTERNATIVAS ............................................................................. 15 
+IMPLEMENTACIÓN Y MONITOREO ..................................................................... 15 
+Estrategia de implementación ................................................................................. 16 
+Indicador ................................................................................................................. 16 
+CONSULTA PÚBLICA ......................................................................................... 17 
+BIBLIOGRAFÍA ................................................................................................... 18 
+ 
+ 
+ 
+ 
+ 
+ 
+ 4 
+UPME.GOV.CO | 
+ALCANCE DEL PRESENTE DOCUMENTO 
+ 
+El presente documento de análisis de impacto normativo (AIN) tiene por objeto 
+analizar posibles modificaciones a la reglamentación vigente expedida por la 
+UPME, con el fin de incentivar la inclusión de nuevas tecnologías como los Sistemas 
+de Almacenamiento de Energía Eléctrica con Baterías - SAEB en proyectos con 
+punto de conexión, siempre que se cumplan los requisitos técnicos 
+correspondientes y no se modifique la capacidad de transporte previamente 
+asignada al proyecto. De esta manera, se busca fomentar la adopción de soluciones 
+innovadoras y la promoción de una gestión más eficiente y sostenible de la energía, 
+en línea con las señales que ha dado la UPME en el marco de la estrategia Misión 
+Transmisión. 
+ 
+Si bien la normatividad vigente no exige la elaboración de un AIN, se considera que 
+este es un mecanismo idóneo para abordar la necesidad identificada y la discusión 
+frente las alternativas evidenciadas en conjunto con los diferentes interesados. Por 
+lo an terior, no pretende desconocer ni usurpar las competencias de las demás 
+entidades involucradas en la materia, ni los procedimientos y trámites propios de 
+los ajustes normativos aquí analizados. 
+ANTECEDENTES Y CONTEXTO 
+ 
+El Ministerio de Minas y Energía (MME) por medio de la Resolución 40311 de 2020, 
+establece las disposiciones relacionadas con la asignación de capacidad de 
+transporte en el Sistema Interconectado Nacional (SIN), específicamente en lo 
+relacionado con e l acceso, las garantías, la creación de una ventanilla única 
+administrada por la Unidad de Planeación Minero Energética (UPME) y una 
+transición para los proyectos que se encuentren en incumplimiento con el sistema. 
+ 
+Así mismo, en la mencionada Resolución, el MME ordena a la Comisión de 
+Regulación de Energía y Gas (CREG) expedir la regulación necesaria para el 
+cumplimiento de las disposiciones allí contenidas y establece los objetivos que esta 
+debe cumplir, entre los que se encuentran: 
+ 
+1. Cumplir con las necesidades de expansión de la generación del SIN, de 
+forma que se prioricen las conexiones de proyectos que tienen obligaciones 
+adquiridas mediante los mecanismos de mercado definidos por el Gobierno 
+Nacional, el MME o CREG. 
+ 
+ 5 
+UPME.GOV.CO | 
+2. Hacer uso adecuado y eficiente de la disponibilidad de las redes de 
+transporte de energía eléctrica en el SIN. 
+3. Frente al incumplimiento de los compromisos adquiridos, liberar la 
+capacidad de transporte de energía no utilizada, en procura de garantizar la 
+prestación del servicio público domiciliario de energía eléctrica de forma 
+eficiente, sostenible y continua, de acuerdo con las necesidades de la oferta 
+y la demanda de energía en el territorio nacional. 
+4. Hacer eficientes, efectivos y unificados los procesos, procedimientos y 
+actividades asociadas a la asignación de la capacidad de transporte a las 
+redes del SIN. 
+ 
+Conforme al citado mandato, la CREG definió por medio de la Resolución CREG 
+075 de 2021, las condiciones regulatorias para la asignación de capacidad de 
+transporte a generadores en el SIN, estableciendo , entre otras, la delegación a la 
+UPME como responsable de la asignación de capacidad de transporte y la definición 
+de un procedimiento para tal fin, en los siguientes términos: 
+ 
+“ARTÍCULO 4. RESPONSABLE DE LA ASIGNACIÓN DE CAPACIDAD DE 
+TRANSPORTE. La Unidad de Planeación Minero Energética, UPME, será la 
+responsable de recibir y resolver las solicitudes de asignación de capacidad de 
+transporte en el SIN de los proyectos clase 1, con base en las disposiciones 
+establecidas en la presente resolución.” 
+ 
+“ARTÍCULO 11. PROCEDIMIENTO PARA LA ASIGNACIÓN DE CAPACIDAD DE 
+TRANSPORTE. La asignación de capacidad de transporte de los proyectos clase 1 
+se llevará a cabo anualmente, a través de un procedimiento que será definido y 
+publicado por el responsable de la asignación a más tardar el 31 de diciembre del 
+2021. En el procedimiento de asignación se identificará la prioridad que se dará a 
+los criterios de que trata el artículo 12 y, si se considera necesario, el 
+procedimiento podrá ser diferenciando por tipo o características del proyecto. Este 
+procedimiento deberá estar publicado en la ventanilla única desde cuando esta entre 
+en servicio.” 
+ 
+En cumplimiento de lo anterior, la UPME expidió la Resolución 528 de 2021 “Por la 
+cual se establece el procedimiento para el trámite de solicitudes de conexión al 
+Sistema Interconectado Nacional (SIN), se establecen disposiciones sobre la 
+asignación de capacidad de transporte a proyectos clase 1 por parte de la UPME y 
+se definen los parámetros generales de la Ventanilla Única”, la cual de manera 
+general tiene por objeto: 
+ 
+1. Definir los parámetros generales para el uso y funcionamiento de la 
+Ventanilla Única (VU). 
+ 
+ 6 
+UPME.GOV.CO | 
+2. Establecer el procedimiento para el trámite de las conexiones al SIN para 
+proyectos clase 1. 
+3. Establecer algunas disposiciones asociadas a la asignación, modificación y 
+reserva de la capacidad de transporte de proyectos clase 1 teniendo en 
+cuenta la regulación prevista en la Resolución CREG 075 de 2021. 
+DESCRIPCIÓN DEL PROBLEMA 
+ 
+En el marco de la estrategia Misión Transmisión, la UPME publicó el “Plan Maestro 
+de Modernización y Expansión de la Infraestructura de Transmisión Eléctrica” 
+presentado como una guía integral para abordar de manera estratégica los desafíos 
+y oportunidades que enfrenta el sector en el contexto de la transición energética, 
+así como ante el aumento de la demanda y las dificultades para expandir la 
+infraestructura de transmisión, con el propósito de orientar las acciones necesarias 
+para implementar cambios estructurales, tecnológicos y regulatorios que permitan 
+alcanzar los objetivos de sostenibilidad, eficiencia operativa y competitividad del 
+sistema eléctrico colombiano. 
+ 
+El Plan Maestro de expansión resalta la necesidad de encontrar soluciones flexibles 
+que puedan implementarse rápidamente, innovadoras y que permitan promover 
+una gestión más eficiente y sostenible de la energía, y en este contexto, las baterías 
+surgen como una alternativa viable que no solo permiten una gestión eficiente de 
+la capacidad del proyecto de generación, sino que también contribuyen a disminuir 
+la incertidumbre asociada a la generación de energía renovable, caracterizada por 
+su variabilidad. 
+ 
+Sin embargo, la implementación de este tipo de tecnología no se está dando en el 
+país con la prontitud requerida por el sistema. Por lo tanto, con el fin de identificar 
+alternativas que permitan intensificar la incorporación de los baterías, se busca 
+generar señales que apunten a l objetivo de lograr la implementación de esta 
+tecnología como complemento de proyectos de generación que cuenten con punto 
+de conexión, sin modificar la capacidad de transporte previamente asignada. 
+ 
+Sin embargo, se identifican algunas barreras , entre l as cuales se encuentran la 
+necesidad de un marco regulatorio favorable que impulse el rol de los SAEB como 
+herramienta para mitigar restricciones a corto plazo y postergar la necesidad de 
+invertir en nuevas infraestructuras de transmisión o de generación, que además 
+permitiría maximizar las capacidades de los proyectos y, a su vez, se generen más 
+beneficios para el sistema. 
+ 
+ 7 
+UPME.GOV.CO | 
+ 
+En particular y para la oportunidad evidenciada, se proponen ajustes en las 
+disposiciones contenidas en la Resolución UPME 528 de 2021, actualmente 
+vigente, para incentivar la instalación de SAEB a través de la modificación de los 
+conceptos de asignación de capacidad de transporte previamente emitidos por la 
+UPME. Lo anterior, teniendo en consideración que actualmente para obtener un 
+punto de conexión o realizar modificaciones al concepto obtenido, el marco 
+normativo es el mismo, lo cual puede desincentivar la instalación de SAEB debido 
+a la complejidad del proceso de asignación y la poca claridad de las reglas respecto 
+a modificaciones de los conceptos emitidos. 
+ 
+La creación de un marco regulatorio sólido y la modificación de los procesos de 
+asignación de capacidad de transporte son dos aspectos esenciales para fomentar 
+la adopción de SAEB y maximizar su potencial en la red eléctrica. No obstante, 
+dadas las competencias actuales de la UPME, se evidencia que solo se puede 
+abordar parcialmente la modificación del proceso de conexión para casos en los 
+que no se requieran señales del regulador. Por esta razón , y de acuerdo con la 
+normatividad vigente, un concepto de conexión o su respectiva modificación debe 
+tener en cuenta la fecha de puesta en operación y, en particular, las garantías para 
+proyectos que se encuentren en construcción. 
+ 
+Causas Conforme a los análisis adelantados en la UPME y de comentarios 
+allegados por actores interesados, las causas del problema identificado son 
+fundamentalmente las siguientes: 
+ 
+- Falta de un marco regulatorio para maximizar los beneficios de las SAEB: 
+El marco normativo del sector eléctrico colombiano ha abordado aspectos 
+clave para incentivar la integración de sistemas de almacenamiento , como 
+las baterías, con el objetivo de generar apoyo a la red en caso de falla o 
+insuficiencia en la capacidad de transporte y sobrecostos por restricciones. 
+Sin embargo, para maximizar el uso de esta tecnología y beneficiar al usuario 
+final es esencial promover la participación de las baterías en otros servicios, 
+tales como: 
+ 
+→ Mitigación de restricciones eléctricas y/u operativas. 
+→ Arbitraje de energía (gestión eficiente de los recursos de generación) 
+→ Respuesta rápida en frecuencia. 
+→ Regulación de frecuencia mediante un control de potencia 
+activa/frecuencia. 
+ 
+ 8 
+UPME.GOV.CO | 
+→ Reserva rodante. 
+ 
+La reactivación de las disposiciones contenidas en la Resolución CREG 098 
+de 2019 son un punto indispensable de partida para la emisión de señales 
+claves a los interesados; sin embargo, estas deben estar acompañadas de la 
+reglamentación adicional para los servicios complementarios que podrían 
+generar mayor incentivo de inversión para la implementación en estas 
+tecnologías. 
+ 
+- Procedimiento para solicitar modificaciones de conceptos de asignación 
+de capacidad de transporte complejo y extenso. El parágrafo 2 del artículo 
+10 de la Resolución UPME 528 de 2021 establece que las modificaciones a 
+los conceptos de conexió n deben ser tratados como una nueva solicitud de 
+conexión para proyectos clase 1 , e s decir, a través de un procedimiento 
+complejo y dispendioso. No obstante, se han identificado algunos casos 
+particulares en los cuales, las modificaciones de conceptos puedan ser 
+tramitadas bajo procedimientos excepcionales y sencillos, por ejemplo, 
+aquellos en los que no se busca aumentar la capacidad de transporte 
+asignada. 
+ 
+- Requisitos complejos y sin claridad frente a su aplicación en procesos de 
+modificación de proyectos: El marco regulatorio actual sobre las 
+modificaciones en los conceptos de asignación de capacidad previamente 
+dados, no establece con claridad el trámite que se debe adelantar en 
+términos de garantías, FPO y demás aspectos relevantes en algunos casos. 
+Por ejemplo, proyectos en los que se quiera incluir mejoras tecnológicas sin 
+afectar la capacidad previamente asignada. 
+ 
+Consecuencia: 
+ 
+De manera general, las causas identificadas permiten evidenciar un desincentivo 
+para los interesados en la inclusión de SAEB en proyectos de generación tanto 
+desde la estructuración del proyecto, como posteriormente ante una posible 
+necesidad de modificación de los conceptos de conexión. A dicionalmente, lo 
+anterior conduce a un sistema inflexible para enfrentar desafíos relacionados con 
+la creciente demanda y las limitaciones de la expansión, entre otros. En particular 
+y, para la oportunidad evidenciada para generar señales que puedan incentivar la 
+inclusión de esta tecnología, el procedimiento de cambios de conceptos de conexión 
+previamente dados adoptado por la UPME es una de las principales causas. 
+ 
+ 9 
+UPME.GOV.CO | 
+ 
+PRINCIPALES MODIFICACIONES 
+ 
+Con base en el análisis del problema, las causas identificadas y la s competencias 
+de la UPME según el Decreto 2121 de 2023, el objetivo de estos cambios es crear 
+un entorno más favorable para la integración de los SAEB en el sistema eléctrico 
+colombiano. 
+ 
+Para esto, se considera la modificación de las disposiciones establecidas en el 
+parágrafo 2 1 del artículo 10 de la Resolución 528 de 2021, incluyendo 
+disposiciones diferenciales relacionadas con modificaciones de conceptos 
+previamente expedidos para la inclusión de nuevas tecnologías como es el caso de 
+los SAEB, siempre que no modifiquen la capacidad de transporte. Lo anterior, de 
+acuerdo con lo establecido en el artículo 11 de la Resolución CREG 075 de 2021, 
+el cual faculta a la UPME para establecer procedimientos diferenciales de acuerdo 
+con el tipo de proyecto o características de este: 
+ 
+“ARTÍCULO 11. PROCEDIMIENTO PARA LA ASIGNACIÓN DE CAPACIDAD DE 
+TRANSPORTE. La asignación de capacidad de transporte de los proyectos clase 1 
+se llevará a cabo anualmente, a través de un procedimiento que será definido y 
+publicado por el responsable de la asignación a más tardar el 31 de diciembre del 
+2021. En el procedimiento de asignación se identificará la prioridad que se dará a los 
+criterios de que trata el artículo 12 y, si se considera necesario, el procedimiento 
+podrá ser diferenciando por tipo o características del proyecto. Este procedimiento 
+deberá estar publicado en la ventanilla única desde cuando esta entre en servicio” 
+(subrayado fuera del texto original). 
+ 
+Esto, teniendo en cuenta que la Resolución CREG 075 de 2021 establece que 
+cualquier modificación del concepto expedido corresponde a un proyecto clase 1: 
+ 
+“Proyecto clase 1: proyectos de conexión de usuarios finales al STN o STR, y 
+proyectos de conexión de generación, cogeneración o autogeneración al SIN 
+diferentes a los proyectos que se encuentren bajo el alcance de la Resolución CREG 
+030 de 2018, o aquella que la modifique, adicione o sustituya . También se 
+considerarán como proyectos clase 1 las modificaciones que se soliciten a las 
+capacidades ya asignadas” (subrayado fuera del texto original). 
+ 
+ 
+1 “PARÁGRAFO 2o. Para el caso de las solicitudes que consistan en el aumento de capacidad de transporte asignada a un 
+proyecto clase 1 o la inclusión de una nueva tecnología como el caso de los Sistemas de Almacenamiento de Energía con 
+Baterías, en un mismo punto de conex ión, tendrá el trámite de una nueva solicitud según se determina en el numeral 1 del 
+presente artículo.” 
+ 
+ 10 
+UPME.GOV.CO | 
+En línea con lo anterior, se requiere dar señales claras frente a aspectos como la 
+fecha de puesta en operación y la garantía del proyecto que requiere la modificación 
+del concepto; al respecto, el regulador ha dispuesto lo siguiente en el artículo 16 
+de la Resolución CREG 075 de 2021: 
+ 
+“ARTÍCULO 16. FECHA DE PUESTA EN OPERACIÓN. La fecha de puesta en 
+operación, FPO, de un proyecto clase 1 será la definida por el responsable de la 
+asignación de capacidad de transporte en el concepto de conexión , considerando 
+la solicitud del interesado, la planeación del sistema y los análisis realizados para 
+la asignación de la capacidad. 
+ 
+El interesado debe entregar una justificación de la fecha de puesta en operación 
+solicitada, y el responsable de la asignación de capacidad de transporte 
+determinará si dicho soporte justifica la solicitud o, en caso contrario, como 
+resultado de su análisi s, definirá la fecha máxima en la que debe entrar en 
+operación el proyecto. Cuando se modifique la fecha solicitada, se le informarán las 
+razones al interesado ” (subrayado fuera del texto original). 
+En este sentido, es claro que quien define la fecha de puesta en operación es el 
+responsable de la asignación considerando la solicitud del interesado. Por otro lado, 
+en lo que respecta a la garantía de reserva de la que trata la Resolución CREG 075 
+de 2021, se tiene lo siguiente: 
+ 
+“ARTÍCULO 24. GARANTÍA PARA RESERVA DE CAPACIDAD. Con el propósito 
+de garantizar la utilización de la capacidad de transporte asignada para proyectos 
+clase 1, el interesado deberá otorgar una garantía para reserva de capacidad que 
+cumpla con los requisitos establecidos en el Anexo “Condiciones de las gara ntías”. 
+Esta garantía deberá entregarse al ASIC conforme al plazo definido en el 
+artículo 28. La entrega deberá ser en físico, mientras el ASIC diseña un sistema de 
+garantías que no requiera su entrega por ese medio. 
+ 
+El valor de la cobertura de la garantía para reserva de capacidad se calcula en pesos 
+colombianos, multiplicando diez (10) dólares de los Estados Unidos de América por 
+el número de kW de la capacidad de transporte asignada , establecido en el 
+concepto de conexión, y por la tasa de cambio representativa del mercado, TRM, 
+vigente el lunes de la semana anterior a la fecha de emisión de la garantía. Este 
+valor debe actualizarse cada vez que se cumpla un nuevo año desde la fecha de 
+emisión de la garantía, con la variación anual de la serie Oferta Interna del Índice 
+de Precios del Productor, IPP, publicada por el DANE a comienzos del mes de enero 
+del año en el que se hace la actualización. La garantía con el valor actualizado debe 
+entregarse al ASIC quince (15) día s hábiles antes de que se cumpla un nuevo año 
+desde la primera fecha de emisión de la primera garantía(...)” (subrayado fuera del 
+texto original). 
+ 
+ 11 
+UPME.GOV.CO | 
+De lo anterior se evidencia claramente que la garantía de reserva prevé el 
+mecanismo para la definición de su valor, por lo que este no es un criterio que pueda 
+ser objeto de modificación por parte de la UPME, si no de aplicación . Así, es 
+necesario tanto para la UPME como para el interesado, tener claridad del esquema 
+para el cambio de concepto de asignación de capacidad de transporte, incluyendo 
+disposiciones diferenciales para la inclusión de nuevas tecnologías como es el caso 
+de los SAEB pero que no modifiquen la capacidad de transporte , así como la 
+definición de la fecha de puesta en operación y de la garantía. 
+ 
+Finalmente, es importante tener presente que con la inclusión de las SAEB a un 
+proyecto de generación, este pasa a ser un proyecto conformado por la unidad de 
+generación más la unidad de almacenamiento, aspecto relevante en particular para 
+los proyectos en construcción , ya que permite contar con diferentes alternativas 
+para la definición de la fecha de puesta en operación y la garantía, siendo esto uno 
+de los puntos clave a consultar y que se pretende analizar y poner a consideración 
+de los diferentes interesados. 
+IDENTIFICACIÓN DE LOS POTENCIALES 
+AFECTADOS 
+ 
+ 
+ACTORES IMPACTOS POSITIVOS 
+MME 
+Las modificaciones propuestas conducen a mitigar 
+barreras para incentivar la inclusión de SAEB, que a su 
+vez permiten adaptar el sistema ante los desafíos y 
+oportunidades que enfrenta el sector en el contexto de 
+la transición energética, política pública del sector. 
+UPME 
+Las modificaciones propuestas conducen a mitigar 
+barreras para incentivar la inclusión de SAEB, que a su 
+vez permiten adaptar el sistema ante los desafíos que 
+enfrenta el sector en el contexto de la transición 
+energética, permitiendo la implementación de 
+soluciones flexibles que contribuyen a superar las 
+dificultades para expandir la infraestructura de 
+transmisión, incluyendo la eliminación o mitigación de 
+restricciones eléctricas. 
+AGENTES DEL 
+MERCADO 
+Las modificaciones propuestas buscan la disminución 
+de trámites administrativos para proyectos con ciertas 
+ 
+ 12 
+UPME.GOV.CO | 
+condiciones técnicas específicas que, aunado a un 
+marco regulatorio ajustado por el regulador en el 
+marco de sus competencias, genere incentivos 
+adecuados para la inclusión de este tipo de soluciones. 
+AGREMIACIONES 
+Las modificaciones propuestas mejoran las condiciones 
+y el rendimiento del sector energético nacional del cual 
+representan a las compañías y agentes. 
+ 
+OBJETIVO DE LA ACTUALIZACIÓN 
+REGULATORIA 
+ 
+Objetivo 
+ 
+El objetivo de la actualización regulatoria es modificar lo dispuesto en el parágrafo 
+2 del artículo 10 de la Resolución UPME 528 de 2021, con el propósito de 
+establecer señales diferenciales de acuerdo al tipo de solicitud e impacto que 
+generen en el sistema, para lo cual se determinarán lineamientos diferentes para 
+modificaciones de conceptos de asignación de capacidad de transporte 
+previamente asignada para proyectos que quieran incluir SAEB a sus proyectos sin 
+modificar la capacidad de transporte asignada. 
+ 
+JUSTIFICACIÓN DE LA NECESIDAD 
+ 
+La UPME, de acuerdo con lo establecido en el artículo 11 de la Resolución CREG 
+075 de 2021, debe publicar un procedimiento para la asignación de capacidad de 
+transporte para los proyectos clase 1, obligación que se cumplió con la expedición 
+de la Resolución UPME 528 de 2021. Sin embargo, dicha resolución establece 
+condiciones que pueden ser restrictivas para ciertas solicitudes y generar 
+desincentivos para desarrollar mejoras tecnologías en proyectos que ya cuentan 
+con punto de conexión y que no deseen modificar su capacidad de transporte. 
+ 
+Con la modificación planteada se busca generar procedimientos diferenciales de 
+acuerdo con las necesidades del interesado y las modificaciones que requerirá, y 
+reconocer las dificultades que actualmente se pueden presentar para adelantar 
+modificaciones en los conceptos de conexión, así como la necesidad de generar 
+señales y medidas que permitan modernizar el sector eléctrico de acuerdo con los 
+ 
+ 13 
+UPME.GOV.CO | 
+análisis y conclusiones presentadas en el documento “Plan Maestro de 
+Modernización y Expansión de la Infraestructura de Transmisión Eléctrica” en el 
+marco de la Misión Transmisión. 
+PRESENTACIÓN DE ALTERNATIVAS 
+ 
+De acuerdo con los análisis adelantados, los comentarios y documentos recibidos, 
+así como la regulación vigente y el espacio de acción actual en el cual puede 
+intervenir la UPME, se evidencia la necesidad de realizar modificaciones a la 
+Resolución UPME 528 de 2021. No obstante, de acuerdo con un análisis integral 
+del marco normativo se requiere generar claridad frente al menos tres (3) aspectos 
+importantes que son el resultado del proceso de modificación del concepto de 
+asignación previamente emitido y que aplicarían para el proyecto completo que 
+sería entendido como la unidad de generación y el sistema de almacenamiento. 
+ 
+- Fecha de puesta en operación del proyecto. 
+- Garantía financiera del proyecto. 
+- Curva S del proyecto. 
+ 
+Alternativa 1. Mantener la regulación actual. 
+Cualquier cambio en el concepto de conexión para la implementación de SAEB, aun 
+cuando no implique cambio en la capacidad asignada, debe tramitarse siguiendo el 
+procedimiento general de las solicitudes de proyectos clase 1. 
+ 
+Esta alternativa consiste en mantener lo establecido en el parágrafo 2 del artículo 
+10 de la Resolución UPME 528 de 2021, por medio del cual se establece que la 
+inclusión de una nueva tecnología, como los SAEB, en un punto de conexión 
+existente, requiere el trámite de una nueva solicitud conforme a la reglamentación 
+vigente. Sin embargo, al ser una disposición que no reconoce situaciones 
+diferenciales en los distintos tipos de solicitudes, el marco de evaluación es rígido 
+y podría generar posibles desincentivos. Es decir, bajo las disposiciones actúales, el 
+cambio en el concepto de conexión para la implementación de SAEB debe 
+realizarse bajo un procedimiento dispendioso y poco claro frente a las obligaciones 
+en términos de garantías, FPO y demás aspectos relevantes que contempla el 
+marco regulatorio actual. 
+ 
+ 14 
+UPME.GOV.CO | 
+Alternativa 2. Modificar la regulación actual. 
+Modificar lo establecido en el parágrafo 2 del artículo 10 de la Resolución UPME 
+528 de 2021, incluyendo lineamientos diferenciales para solicitudes de cambios de 
+concepto de conexión en cuanto a la inclusión de nuevas tecnologías, siempre que 
+no modifiquen la capacidad asignada previamente. 
+ 
+En esta alternativa es importante precisar que las modificaciones del concepto de 
+capacidad de transporte en ningún caso podrán entenderse como una modificación 
+a la capacidad asignada en el concepto inicial, ni modificación en el tipo de proyecto. 
+ 
+Para este escenario, se plantean las siguientes opciones: 
+ 
+Alternativa 2.1. Modificar FPO, garantía y Curva S 
+Bajo esta alternativa , la modificación del concepto se emitirá bajo las siguientes 
+condiciones: 
+ 
+- Modificación de la FPO de todo el proyecto para habilitar el desarrollo de los 
+SAEB. 
+- Alcance de la garantía de reserva en tiempo , que permita cubrir la 
+modificación de la FPO del proyecto (generación y almacenamiento). 
+- Cambios en la Curva S del proyecto para incluir los hitos relacionados con el 
+desarrollo de los SAEB. 
+ 
+Respecto a esta alternativa es importante tener presente que, de acuerdo con la 
+normatividad vigente, para el caso de los proyectos en construcción, la modificación 
+de la curva S no subsana o actualiza hitos incumplidos previamente. 
+ 
+Alternativa 2.2. Sin modificación de FPO y de garantía, pero con modificación 
+de curva S 
+Bajo esta alternativa la modificación del concepto se emitirá con las siguientes 
+condiciones: 
+ 
+- No se modifica la FPO del proyecto. 
+- No requiere modificación de la garantía de reserva. 
+- Se debe modificar la Curva S del proyecto para incluir los hitos relacionados 
+con el desarrollo de los SAEB, sin que esto implique el cambio de la FPO. 
+ 
+ 
+ 15 
+UPME.GOV.CO | 
+Respecto a esta alternativa es importante tener presente que, de acuerdo con la 
+normatividad vigente, para el caso de los proyectos en construcción, la modificación 
+de la curva S no subsana o actualiza hitos incumplidos previamente. 
+ 
+Alternativa 2.3. Modificar FPO, garantía en tiempo, Curva S y emitir concepto 
+por fases 
+Bajo esta alternativa la modificación del concepto se emitirá con las siguientes 
+condiciones: 
+ 
+- Concepto en Fases (Fase 1. FPO para el proyecto de generación. Fase 2. FPO 
+para SAEB) 
+- Solicitud de modificación de la garantía de reserva. Esta modificación sería 
+en tiempo por la totalidad del proyecto (Fase 1 + Fase 2). 
+- Dos curvas S (Fase 1. FPO para el proyecto de generación. Fase 2. FPO para 
+SAEB) 
+ 
+ANÁLISIS DE ALTERNATIVAS 
+ 
+ 
+Alternativa Dificultades / aspectos a profundizar 
+Alternativa 2.1. Modificar 
+FPO, garantía y Curva S 
+No entrada oportuna de los proyectos de generación. 
+Crear una señal errónea frente a la posibilidad de modificar o subsanar 
+hitos incumplidos. 
+Alternativa 2.2. Modificar 
+FPO, garantía y Curva S 
+Debe modificar la curva S para incluir hitos de la SAE sin modificar la 
+FPO. 
+Posibles incrementos en cambios de FPO por fuerza mayor. 
+Mayor riesgo en incumplimiento de la curva S. 
+Alternativa 2.3. Modificar 
+FPO, garantía, Curva S y 
+emitir concepto por fases 
+Al tener una sola garantía para todo el proyecto y dos FPO, no es claro 
+de qué forma se debería realizar la ejecución de las garantías y la 
+afectación en todo el proyecto o en una de las fases. 
+Cambios de FPO: 
+- Nueva regulación en la materia y su aplicación. 
+- El cambio de una FPO y su efecto en la otra FPO. 
+ 
+IMPLEMENTACIÓN Y MONITOREO 
+ 
+ 
+ 16 
+UPME.GOV.CO | 
+En esta sección se indica n la estrategia de implementación, transitoriedad, y 
+descripción del indicador con el cual se hará el seguimiento y evaluación de la 
+modificación y adición propuesta. 
+ 
+Estrategia de implementación 
+La modificación propuesta se efectuará mediante la expedición de una Resolución 
+por parte de la UPME por medio de la cual se modifique el parágrafo 2 del artículo 
+10 de la Resolución UPME 528 de 2021 y, adicionalmente, se exp edirá una nueva 
+resolución con el procedimiento particular, para lo cual se realizarán las siguientes 
+acciones: 
+ 
+- Análisis de impacto normativo simple 
+- Consulta pública de análisis normativo simple 
+- Elaboración del proyecto de resolución modificatorio 
+- Consulta pública del proyecto de resolución modificatorio 
+- Diligenciamiento del formulario para concepto de abogacía de la 
+competencia emitido por la Superintendencia de Industria y Comercio 
+- Adopción de la resolución modificatoria por parte de la Unidad de Planeación 
+Minero Energética (UPME) 
+ 
+Así mismo, se realizará la evaluación o AIN ex post con el fin de determinar la 
+permanencia o modificación de las disposiciones presentadas. Se propone un 
+indicador de seguimiento para evaluar el incremento de las solicitudes de 
+modificación para proyectos con punto de conexión interesadas en implementar 
+SAEB sin modificar su capacidad previamente asignada. 
+ 
+Indicador 
+NOMBRE DEL INDICADOR 
+Porcentaje de variación de solicitudes de modificación del 
+concepto de conexión para incluir SAEB sin modificar 
+capacidad asignada. 
+OBJETIVO DEL INDICADOR 
+Medir el porcentaje de variación en las solicitudes de 
+modificación del concepto de conexión previo para incluir 
+SAEB sin modificar la capacidad de transporte previamente 
+asignada. 
+UNIDADES Porcentaje (%) 
+FRECUENCIA DE MEDICIÓN Anual 
+FUENTE DE INFORMACIÓN Bases de datos solicitudes - UPME 
+ENTIDAD RESPONSABLE Unidad de Planeación Minero Energética (UPME) Subdirección de Energía Eléctrica 
+ 
+ 
+ 17 
+UPME.GOV.CO | 
+Fórmula: 
+% 𝑣𝑎𝑟𝑖𝑎𝑐𝑖ó𝑛 = 𝑇𝑃𝑆𝑀𝐶𝑎
+𝑇𝑃𝐷𝑀𝐶 𝑎
+ 
+ 
+% 𝑣𝑎𝑟𝑖𝑎𝑐𝑖ó𝑛 = 𝑇𝑃𝑆𝑀𝐶𝑎
+𝑃𝑃𝑆𝑀𝑎−1 + 𝑃𝑃𝑆𝑀𝑎
+ 
+ 
+𝑃𝑃𝑆𝑀𝑎−1 = 𝑇𝑃𝐷𝑀𝐶𝑎−1 − 𝑇𝑃𝑆𝑀𝐶𝑎−1 
+ 
+Donde: 
+ 
+𝑇𝑃𝑆𝑀𝐶𝑎 
+Número total de proyectos en el año que solicitaron modificación del concepto de 
+conexión previamente asignado para incluir SAEB sin alterar su capacidad de 
+transporte. 
+𝑇𝑃𝐷𝑀𝐶𝑎 
+Número total de proyectos del año que podrían solicitar modificación del 
+concepto de conexión previamente asignado para incluir SAEB sin alterar su 
+capacidad de transporte. 
+𝑃𝑃𝑆𝑀𝑎−1 
+Número total de posibles proyectos del año anterior que podrían solicitar 
+modificación del concepto de conexión previamente asignado para incluir SAEB 
+sin alterar su capacidad de transporte en el año actual. 
+𝑃𝑃𝑆𝑀𝑎 
+Número total de proyectos que le asignaron punto de conexión en el año actual y 
+que podrían solicitar modificación del concepto de conexión previamente 
+asignado para incluir SAEB sin alterar su capacidad de transporte. 
+ 
+CONSULTA PÚBLICA 
+ 
+ 
+El presente AIN será sometido a consulta pública durante un periodo de treinta (30) 
+días. Este documento será publicado en la página web de la UPME con el objetivo 
+de recibir retroalimentación sobre las diferentes alternativas propuestas o alguna 
+alternativa adicional que los interesados en el marco de la regulación vigente 
+evidencian viable y que sea de interés para analizar. 
+ 
+De forma similar, el proyecto de resolución modificatoria será publicado en la 
+página web de la UPME y los comentarios recibidos, tanto al AIN como al proyecto 
+de resolución se analizarán y las respuestas serán consignadas en una matriz que 
+será publicada en la página web de la entidad. Así mismo, se realizarán las 
+modificaciones pertinentes a dichos documentos (AIN y proyecto de resolución) de 
+acuerdo con el análisis realizado a los comentarios recibidos. 
+ 
+ 
+ 18 
+UPME.GOV.CO | 
+BIBLIOGRAFÍA 
+ 
+ 
+1. Ministerio de Minas y Energía. Resolución 40311 de 2021 
+2. Comisión de Regulación de Energías y Gas. Resolución 075 de 2021 
+3. Unidad de Planeación Minero Energética. Resolución 528 de 2021. 
+4. Departamento Nacional de Planeación. Guía de Análisis de Impacto 
+Normativo. 
+5. Ser Colombia. Propuestas para la promoción e incorporación de los Sistemas 
+de Almacenamiento de Energía en Colombia. Correo remitido 21 de febrero 
+de 2025 
+6. Ministerio de Minas y Energía. Resolución 40311 de 2021. Impacto del 
+almacenamiento en la confiabilidad del SIN. Correo remitido el 03 de marzo 
+de 2025. 
+7. Departamento Nacional de Planeación. Estudios de sistemas de 
+almacenamiento. Correo remitido el 28 de febrero de 2025. 
+8. Unidad de Planeación Minero Energética. “Plan Maestro de Modernización y 
+Expansión de la Infraestructura de Transmisión Eléctrica 
+ 
+ 

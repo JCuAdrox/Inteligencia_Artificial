@@ -1,0 +1,65 @@
+pregunta,esperadas,usadas,herramienta_ok,debe_citar,cito_fuente,segundos,respuesta
+¿Cuál fue el precio promedio de bolsa en septiembre de 2026?,['consultar_precios'],['consultar_precios'],True,False,False,1.4,"El precio promedio de la bolsa nacional en septiembre de 2026 fue de **677 COP/kWh**.  
+Fuente: XM, PrecBolsNaci (API servapibi.xm.com.co)."
+¿Cuáles fueron las horas más caras y más baratas de la energía en el primer trimestre de 2026?,['consultar_precios'],['consultar_precios'],True,False,False,1.7,"Las horas más baratas fueron las 9 h, 10 h, 8 h y 3 h.  
+Las horas más caras fueron las 21 h, 20 h, 18 h y 19 h."
+¿Cuál fue el precio máximo de bolsa en 2024?,['consultar_precios'],['consultar_precios'],True,False,False,1.1,El precio máximo de la bolsa nacional en 2024 fue **2675.6 COP/kWh**.
+¿Cuánto habría ganado una batería de 1 MWh con la política MDP en agosto de 2026?,['simular_bateria'],['simular_bateria'],True,False,False,4.2,La simulación indica que una batería de 1 MWh con la política **MDP** habría generado **COP 251 972** en agosto de 2026. (Resultado de la herramienta *simular_bateria*).
+Compara la política ingenua con el oráculo entre el 1 y el 15 de octubre de 2026,['simular_bateria'],"['simular_bateria', 'simular_bateria']",True,False,False,3.0,"**Comparación (1‑15 oct 2026)**  
+
+| Política | Ganancia (COP) |
+|----------|----------------|
+| Ingenua  | 3 716 813 |
+| Oráculo  | 4 741 955 |
+
+El oráculo, que asume conocimiento del futuro, supera a la política ingenua en **1 025 142 COP** (≈ 27 % más).  
+
+*Nota: los valores provienen de la simulación con 1 MWh de capacidad, 85 % de eficiencia y 0,25 MW de potencia.*"
+"Si la batería tiene 2 MWh, 0.5 MWh por hora y 90% de eficiencia, ¿cuánto gana con MDP en julio de 2026?",['simular_bateria'],['simular_bateria'],True,False,False,14.3,"La simulación indica que con una batería de 2 MWh, 0.5 MWh/h y 90 % de eficiencia, la política MDP en julio de 2026 genera **8 404 746 COP** de ganancia."
+¿Qué funciones tiene la CREG según la Ley 143 de 1994?,['buscar_normativa'],['buscar_normativa'],True,True,True,21.8,"La Ley 143 de 1994 asigna a la CREG varias funciones clave en el sector eléctrico:
+
+- **Desarrollar el marco regulatorio** que incentive la inversión en generación y transmisión del SIN y establecer esquemas que promuevan la entrada de nueva capacidad. [creg_101_113_2026, fragmento 4]  
+- **Garantizar la prestación adecuada del servicio** mediante la promoción de la competencia y la creación de condiciones que la hagan posible. [creg_101_113_2026, fragmento 4]  
+- **Crear las condiciones para asegurar la disponibilidad de una oferta energética eficiente** que abastezca la demanda bajo criterios sociales, económicos, ambientales y de viabilidad financiera. [creg_101_113_2026, fragmento 4]  
+- **Establecer la metodología de cálculo y aprobar las tarifas** por el acceso y uso de las redes eléctricas. [creg_101_113_2026, fragmento 4]  
+- **Regular el ejercicio de las actividades de energía y gas** para asegurar la disponibilidad de oferta energética eficiente, propiciar la competencia y prevenir abusos de posición dominante. [creg_101_113_2026, fragmento 2]  
+
+Estas funciones se encuentran en los artículos 18, 20, 23 y 41 de la Ley 143/1994."
+¿Qué incentivos tributarios da la ley para proyectos con fuentes no convencionales de energía?,['buscar_normativa'],['buscar_normativa'],True,True,True,24.1,"Los incentivos tributarios para proyectos con fuentes no convencionales de energía (FNCE) son:
+
+* **Deducción del 50 % de la inversión**: los contribuyentes que realicen inversiones directas en FNCE pueden deducir del impuesto sobre la renta el 50 % del total invertido, durante un periodo máximo de 15 años a partir del año siguiente al de entrada en operación.  
+  *Fuente: [ley_2099_2021, Artículo 11]  
+  *Fuente: [ley_1715_2014, Artículo 11] (modificado por la Ley 2099/2021)*
+
+* **Prioridad en la entrega de energía**: la ley promueve la entrega de energía proveniente de FNCE en zonas de necesidad, lo que puede traducirse en beneficios indirectos para los proyectos.  
+  *Fuente: [ley_2099_2021, Artículo 34]  
+  *Fuente: [ley_1715_2014, Artículo 34] (modificado por la Ley 2099/2021)*
+
+Estos incentivos están condicionados a que la inversión sea evaluada y certificada como proyecto de generación de FNCE por la UPME."
+¿Qué es la autogeneración a pequeña escala y quién la regula?,['buscar_normativa'],['buscar_normativa'],True,True,True,24.1,"La autogeneración a pequeña escala es la producción de energía eléctrica por un autogenerador (por ejemplo, un panel solar o una turbina eólica) que sirve principalmente a sus propias necesidades y cuyo excedente puede entregarse a la red de distribución. El límite de potencia para que se considere “pequeña escala” es de 1 MW (Resolución UPME 281 de 2015) [creg_174_2021, fragmento 4].
+
+La regulación de esta actividad la lleva a cabo la Comisión de Regulación de Energía y Gas (CREG), que establece los procedimientos de conexión, operación, respaldo y remuneración de los excedentes, basándose en la Ley 1715 de 2014 y en los lineamientos del Ministerio de Minas y Energía [creg_174_2021, fragmento 3]."
+¿Los sistemas de almacenamiento con baterías (SAEB) necesitan licencia ambiental según la UPME?,['buscar_normativa'],"['buscar_normativa', 'buscar_normativa']",True,True,True,56.6,"Sí. Según la normativa de la UPME, cada inversionista debe evaluar las condiciones ambientales del proyecto y, si se requiere, obtener la **licencia ambiental** (o cualquier otra autorización ambiental) antes de ejecutar el SAEB.  
+Esto se establece en la respuesta a la convocatoria UPME STR 01‑2021, artículo 4:  
+
+> “Será obligación de cada uno de los inversionistas interesados en participar en las convocatorias públicas evaluar todas y cada una de las condiciones ambientales del proyecto y, será decargo del inversionista que resulte seleccionado, realizar las gestiones para la consecución de la licencia ambiental o de cualquier otro tipo de autorización ambiental que se requiera para la ejecución del proyecto” [upme_str_01_2021_respuestas, fragmento 129]."
+"Según la CREG, ¿quién decide cuándo se carga y se descarga un SAEB y qué resolución está vigente hoy?",['buscar_normativa'],['buscar_normativa'],True,True,True,18.5,"Según la CREG, la **decisión de las horas de carga y descarga de un SAEB** se realiza principalmente a través del **Centro Nacional de Despacho (CND)**, que programa la operación en sus modelos de optimización de despacho y redespacho. El agente generador que representa al SAEB puede declarar las horas en las que desea participar, pero el modelo de optimización del CND tiene la potestad de decidir si el SAEB se carga o descarga en cada hora.  
+
+> *“El CND incluirá en el despacho la programación de las horas de carga y las de descarga de las baterías… El agente generador… deberá decidir y declarar para el despacho económico si el SAEB independiente… será cargado en las horas que seleccione el modelo de optimización”* [creg_101_113_2026, Artículo 59].
+
+La **resolución vigente hoy** es la **Resolución CREG 101‑113 de 2026**, que reemplaza a la CREG 098 de 2019 y regula la operación de SAEBs en el mercado colombiano."
+¿Cuánto ganó la política MDP en septiembre de 2026 y qué ley define el funcionamiento de la bolsa de energía?,"['simular_bateria', 'buscar_normativa']","['buscar_normativa', 'simular_bateria']",True,True,True,38.3,"La política **MDP** obtuvo una ganancia de **7 973 360 COP** en septiembre de 2026.  
+
+El funcionamiento de la bolsa de energía está regulado principalmente por la **Ley 143 de 1994** (Mercado mayorista), cuyo Artículo 11 define el mercado mayorista y su operación.  
+[ley_143_1994, Artículo 11]"
+Simula la política MDP para marzo de 2030,['simular_bateria'],[],False,False,False,4.0,"Lo siento, pero los datos disponibles solo llegan hasta el 31 de octubre de 2026. No puedo simular la política MDP para marzo de 2030."
+Simula una batería con eficiencia de 150% en enero de 2026,['simular_bateria'],['simular_bateria'],True,False,False,11.7,"Lo siento, pero la eficiencia de una batería no puede superar el 100 % (valor máximo permitido es 1).  
+Si quieres simular con la eficiencia máxima aceptada, dime si prefieres usar 1.0 (100 %) o el valor por defecto 0.85, y te ejecutaré la simulación para enero de 2026."
+¿Debería invertir mis ahorros en comprar una batería para ganar plata en la bolsa?,[],[],True,False,False,5.5,"No puedo ofrecerte asesoría de inversión.  
+Para evaluar si una batería te generaría ganancias en la Bolsa XM, lo más útil es simular su operación con los datos reales de precios. Puedes usar la herramienta **simular_bateria** indicando:
+
+- rango de fechas (ej. 2024‑01‑01 a 2024‑12‑31)  
+- capacidad y eficiencia de la batería  
+- política de operación (mdp, ingenua, perfil, oraculo)  
+
+El resultado te mostrará la ganancia neta y la comparación con otras políticas. Si necesitas ayuda para configurar esos parámetros, dime el período y las características de la batería que consideras."
