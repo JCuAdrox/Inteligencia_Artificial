@@ -22,8 +22,18 @@ Conforme al pacto pedagógico del curso, declaramos el uso de IA generativa en e
 
 > **Pendiente del equipo antes de entregar:** cada integrante debe revisar el código y los análisis, verificar que entiende cómo funciona cada parte, y completar aquí qué hizo cada uno (aporte individual).
 
-## Aporte individual
-
-- Jerónimo Castaño Herrera: _(completar)_
-- Emanuel Gonzalez Florez: _(completar)_
-- Jerónimo Zapata Cuadros: _(completar)_
+- Jerónimo Castaño Herrera:
+  * Descarga y limpieza de precios horarios de XM
+  * Diseño de estados (hora, nivel de carga, rango de precio), ajuste de γ y paso a precio relativo.
+  * Comparación contra políticas ingenua, adaptativa y oráculo.
+  * EDA y resultados del notebook 01_datos_y_mdp.ipynb.
+- Emanuel Gonzalez Florez: 
+  * Descarga del corpus normativo (leyes, CREG, UPME) y manejo del tema IPv4. 
+  * RAG: chunking, embeddings con multilingual-e5-small, índice FAISS. 
+  * Loop del agente con tool calling y las 3 herramientas.
+  * Evaluación del agente con las 15 preguntas y notebook.
+- Jerónimo Zapata Cuadros: 
+  * Dashboard en Streamlit: parámetros, visualizaciones y chat.
+  * Conexión del MDP y el agente dentro de la app.
+  * Redacción del informe.md, el README y la declaracion_uso_IA.md.
+  * Configuración del entorno, requirements.txt y verificación de notebooks ejecutados.
