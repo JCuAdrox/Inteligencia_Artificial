@@ -20,8 +20,6 @@ Conforme al pacto pedagógico del curso, declaramos el uso de IA generativa en e
 - Las respuestas del agente se revisaron una por una (notebook 02) y se reportan también los errores.
 - Los textos legales del corpus son descargados directamente de las fuentes oficiales, no generados por IA.
 
-> **Pendiente del equipo antes de entregar:** cada integrante debe revisar el código y los análisis, verificar que entiende cómo funciona cada parte, y completar aquí qué hizo cada uno (aporte individual).
-
 - Jerónimo Castaño Herrera:
   * Descarga y limpieza de precios horarios de XM
   * Diseño de estados (hora, nivel de carga, rango de precio), ajuste de γ y paso a precio relativo.
